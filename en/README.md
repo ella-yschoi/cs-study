@@ -1,4 +1,4 @@
-# Computer Science Study
+# CS Study (English)
 
 > 🧠 Learning CS concepts with the depth of a major, even as a non-major!
 
