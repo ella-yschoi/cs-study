@@ -1,0 +1,143 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# CS Study Project Guidelines
+
+## 🎯 Project Overview
+This is a Computer Science study project focused on Operating Systems and Computer Architecture. The project follows a structured learning approach with regular study sessions and comprehensive documentation.
+
+## 📁 Project Structure
+- **Main Documentation**: [README.md](mdc:README.md) - Project overview and study methodology
+- **OS Lectures**: [os/](mdc:os) - Operating system lecture notes (01_What_is_OS.md, 02_Computer_System_Structure.md, etc.)
+- **Deep Dive Topics**: [deep-dive/](mdc:deep-dive) - Advanced concepts and detailed explanations
+- **Visual Assets**: [Images/](mdc:Images) - Diagrams, charts, and explanatory images
+
+## 🚨 CRITICAL RULES - MUST FOLLOW
+
+### ✅ **ALWAYS DO:**
+1. **Use Korean language** for all content creation and responses
+2. **Follow the established file naming convention**:
+   - OS files: `01_`, `02_` sequential numbering + descriptive name
+   - Deep Dive files: CamelCase or underscore separation
+   - Images: snake_case format
+3. **Reference official sources** when creating content:
+   - Primary: [이화여대 운영체제 강의 by 반효경 교수님](mdc:http:/www.kocw.net/home/cview.do?cid=4b9cd4c7178db077)
+   - Secondary: YouTube channels (널널한 개발자 TV, CS50, 개발자 장고)
+4. **Include visual elements** for complex concepts:
+   - Use images from [Images/](mdc:Images) directory
+   - Reference with proper path: `/Images/filename.png`
+   - Provide clear explanations for each visual element
+5. **Structure content hierarchically**:
+   - Use clear heading levels (# ## ###)
+   - Include concept definitions first
+   - Follow with examples and practical applications
+   - End with advantages/disadvantages for algorithms
+
+### ❌ **NEVER DO:**
+1. **Don't create content in English** - all documentation must be in Korean
+2. **Don't skip source attribution** - always cite the original lecture or reference material
+3. **Don't use inconsistent formatting** - maintain the established markdown style
+4. **Don't create files without proper naming convention** - follow the 01_, 02_ pattern for OS files
+5. **Don't ignore visual elements** - complex concepts must include diagrams or images
+6. **Don't create content without practical examples** - always include real-world applications or analogies
+
+## 📝 Content Creation Guidelines
+
+### **Markdown Structure Template:**
+```markdown
+# Main Title
+
+> Reference: [Source Name](mdc:URL)
+
+## Concept Definition
+- Clear, concise explanation
+- Key terms in **bold**
+- Technical terms in `code format`
+
+## Visual Explanation
+![image_name.png](mdc:Images/image_name.png)
+- Detailed explanation of the visual element
+
+## Examples and Applications
+- Real-world examples
+- Practical use cases
+- Analogies for better understanding
+
+## Analysis (for algorithms)
+### Advantages
+- Point 1
+- Point 2
+
+### Disadvantages
+- Point 1
+- Point 2
+```
+
+### **Learning Methodology Integration:**
+- Content should support **Tuesday/Thursday 10 PM study sessions**
+- Include **TIL (Today I Learned) format** for easy review
+- Focus on **explainable concepts** - content should be understandable enough to teach others
+- Emphasize **practical understanding** over memorization
+
+## 🎨 Style and Formatting Standards
+
+### **Text Formatting:**
+- **Bold text** for important concepts and key terms
+- `Code format` for technical terms, file names, and commands
+- *Italic* for emphasis and foreign terms
+- > Blockquotes for important notes and references
+
+### **Image Integration:**
+- Always use 2-space indentation before image references
+- Provide context and explanation for each image
+- Ensure images are properly sized and readable
+- Use descriptive alt text in markdown
+
+### **Code and Technical Content:**
+- Use proper code blocks with language specification
+- Include comments for complex algorithms
+- Provide step-by-step explanations for technical processes
+- Use analogies to explain complex concepts
+
+## 🔄 Content Update Workflow
+
+### **When Adding New Content:**
+1. Check existing structure in [os/](mdc:os) or [deep-dive/](mdc:deep-dive)
+2. Follow the established naming convention
+3. Include proper references and sources
+4. Add visual elements where appropriate
+5. Update [README.md](mdc:README.md) with new content links
+
+### **When Modifying Existing Content:**
+1. Maintain the original structure and style
+2. Preserve all existing references and images
+3. Add new information without disrupting flow
+4. Update any related cross-references
+
+## 🎯 Quality Assurance Checklist
+
+Before finalizing any content, ensure:
+- [ ] Content is written in Korean
+- [ ] Proper source attribution is included
+- [ ] Visual elements are properly referenced
+- [ ] File naming follows conventions
+- [ ] Content structure is hierarchical and clear
+- [ ] Practical examples are included
+- [ ] Technical terms are properly formatted
+- [ ] Cross-references are updated in [README.md](mdc:README.md)
+
+## 🚀 Performance Optimization
+
+### **For AI Assistance:**
+- Always reference specific files using [filename](mdc:filename) format
+- Provide clear context about the project's learning objectives
+- Specify the target audience (CS students, non-majors learning CS)
+- Emphasize the practical, explainable nature of the content
+
+### **For Content Creation:**
+- Focus on concepts that can be explained to others
+- Include analogies and real-world examples
+- Structure content for easy review and study sessions
+- Maintain consistency with existing documentation style

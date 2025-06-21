@@ -1,0 +1,242 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Bilingual Project Structure Guidelines
+
+## 🎯 Bilingual Repository Management
+
+### **Project Structure Overview:**
+```
+cs-study/
+├── README.md                    # Bilingual overview (Korean + English)
+├── kor/                         # Korean content
+│   ├── os/                      # Operating System lectures
+│   │   ├── 01_What_is_OS.md
+│   │   ├── 02_Computer_System_Structure.md
+│   │   ├── 03_Process_Management.md
+│   │   ├── 04_CPU_Scheduling.md
+│   │   └── 05_Process_Synchronization.md
+│   └── deep-dive/               # Advanced topics
+│       ├── Blocking_NonBlocking.md
+│       ├── Caching.md
+│       ├── Interrupt.md
+│       ├── OS_Kernel.md
+│       ├── Round_Robin.md
+│       └── Unix_Linux_macOS_Windows.md
+├── en/                          # English content
+│   ├── os/                      # Operating System lectures
+│   │   ├── 01_What_is_OS.md
+│   │   ├── 02_Computer_System_Structure.md
+│   │   ├── 03_Process_Management.md
+│   │   ├── 04_CPU_Scheduling.md
+│   │   └── 05_Process_Synchronization.md
+│   └── deep-dive/               # Advanced topics
+│       ├── Blocking_NonBlocking.md
+│       ├── Caching.md
+│       ├── Interrupt.md
+│       ├── OS_Kernel.md
+│       ├── Round_Robin.md
+│       └── Unix_Linux_macOS_Windows.md
+├── Images/                      # Shared visual assets
+└── .cursor/rules/              # Project guidelines
+```
+
+## 🚨 CRITICAL BILINGUAL MANAGEMENT RULES
+
+### ✅ **MUST FOLLOW:**
+
+#### **1. File Synchronization:**
+- **Maintain identical file names** across kor/ and en/ directories
+- **Keep same directory structure** in both language versions
+- **Preserve all image references** to shared Images/ directory
+- **Maintain same heading hierarchy** in both versions
+- **Keep same cross-reference structure** (update paths appropriately)
+
+#### **2. Content Consistency:**
+- **Ensure same technical concepts** are covered in both versions
+- **Maintain same examples and analogies** (translated appropriately)
+- **Keep same learning progression** from basic to advanced
+- **Preserve all mathematical formulas** and code examples
+- **Maintain same educational approach** and target audience
+
+#### **3. Navigation and Cross-References:**
+- **Update internal links** to point to correct language version
+- **Maintain bilingual navigation** in README.md
+- **Provide language switching** options where appropriate
+- **Keep external links** functional in both versions
+- **Preserve source attribution** with appropriate language
+
+### ❌ **NEVER DO:**
+
+#### **1. Structure Violations:**
+- **Don't create different file structures** between languages
+- **Don't use different naming conventions** for same content
+- **Don't break image references** or file paths
+- **Don't create orphaned content** without counterpart
+- **Don't use inconsistent formatting** between versions
+
+#### **2. Content Divergence:**
+- **Don't add content** to one language without the other
+- **Don't remove content** from one language without the other
+- **Don't change technical accuracy** between versions
+- **Don't alter learning objectives** between languages
+- **Don't use different examples** for same concepts
+
+## 📝 Bilingual README Template
+
+### **Structure for [README.md](mdc:README.md):**
+```markdown
+# Computer Science Study
+
+> 🧠 Learning CS concepts with the depth of a major, even as a non-major!
+
+<br/>
+
+## 🌍 Language Versions
+
+This repository contains both Korean and English versions of CS study materials:
+
+- **[🇰🇷 Korean Version](mdc:kor)** - 한국어 버전
+- **[🇺🇸 English Version](mdc:en)** - English Version
+
+<br/>
+
+## 📗 Study Direction
+
+### 1. Book Reading
+- "Computer Architecture and Programming in One Book"
+
+### 2. Lecture Learning
+
+#### (1) YouTube Lectures
+- Nullnull Developer TV
+  - OS, Design Pattern, Network (⭐ Recommended)
+  - Good for related field presentations (experiences, use cases)
+- CS50
+  - Harvard CS50 Computer Science Course
+- Developer Django
+  - Interview preparation possible
+  - Good to watch before interviews
+
+#### (2) MOOC Lectures
+- OS
+  - [Ewha Womans University Operating System by Prof. Ban Hyo-kyung](mdc:http:/www.kocw.net/home/cview.do?cid=4b9cd4c7178db077) → **Adopted!**
+- System Software
+  - [Ewha Womans University System Software by Prof. Ban Hyo-kyung](mdc:http:/www.kocw.net/home/cview.do?cid=8562026226b093ea) → Take after OS course
+
+<br/>
+
+## 📗 Study Method
+
+- Conducted by [Chloe](mdc:https:/github.com/chloe-codes1) and [Ella](mdc:https:/github.com/ella-yschoi)
+- **Every Tuesday and Thursday at 10 PM** (about 1.5-2 hours)
+- Study together with [Ewha Womans University OS Course](mdc:http:/www.kocw.net/home/cview.do?cid=4b9cd4c7178db077)
+- **Pause videos** when concepts are unclear and discuss
+- **Write TIL by next day** for review
+- **Study to explain to others**
+- **Review with TIL** → **Learn new concepts**
+
+<br/>
+
+## 📗 Lecture Notes
+
+### Operating System (Operating System)
+
+#### 🇰🇷 Korean
+- [운영체제란?](mdc:kor/os/01_What_is_OS.md)
+- [컴퓨터 시스템 구조](mdc:kor/os/02_Computer_System_Structure.md)
+- [프로세스 관리](mdc:kor/os/03_Process_Management.md)
+- [CPU 스케줄링](mdc:kor/os/04_CPU_Scheduling.md)
+- [프로세스 동기화](mdc:kor/os/05_Process_Synchronization.md)
+
+#### 🇺🇸 English
+- [What is OS?](mdc:en/os/01_What_is_OS.md)
+- [Computer System Structure](mdc:en/os/02_Computer_System_Structure.md)
+- [Process Management](mdc:en/os/03_Process_Management.md)
+- [CPU Scheduling](mdc:en/os/04_CPU_Scheduling.md)
+- [Process Synchronization](mdc:en/os/05_Process_Synchronization.md)
+
+<br/>
+
+## 📗 Further Study
+
+#### 🇰🇷 Korean
+- [블로킹 vs 논블로킹](mdc:kor/deep-dive/Blocking_NonBlocking.md)
+- [캐싱](mdc:kor/deep-dive/Caching.md)
+- [인터럽트](mdc:kor/deep-dive/Interrupt.md)
+- [OS 커널](mdc:kor/deep-dive/OS_Kernel.md)
+- [라운드 로빈](mdc:kor/deep-dive/Round_Robin.md)
+- [유닉스 vs 리눅스 vs macOS vs 윈도우](mdc:kor/deep-dive/Unix_Linux_macOS_Windows.md)
+
+#### 🇺🇸 English
+- [Blocking vs. Non-blocking](mdc:en/deep-dive/Blocking_NonBlocking.md)
+- [Caching](mdc:en/deep-dive/Caching.md)
+- [Interrupt](mdc:en/deep-dive/Interrupt.md)
+- [OS Kernel](mdc:en/deep-dive/OS_Kernel.md)
+- [Round Robin](mdc:en/deep-dive/Round_Robin.md)
+- [Unix vs. Linux vs. macOS vs. Windows](mdc:en/deep-dive/Unix_Linux_macOS_Windows.md)
+```
+
+## 🔄 Content Synchronization Workflow
+
+### **When Adding New Content:**
+1. **Create in both languages** simultaneously
+2. **Maintain same structure** and organization
+3. **Update README.md** with both language links
+4. **Verify cross-references** work in both versions
+5. **Test navigation** between language versions
+
+### **When Updating Existing Content:**
+1. **Update both language versions** to maintain consistency
+2. **Preserve technical accuracy** in both versions
+3. **Update cross-references** in both languages
+4. **Verify image references** still work
+5. **Check formatting consistency** between versions
+
+### **Quality Assurance Process:**
+1. **Technical review** - ensure accuracy in both languages
+2. **Educational review** - verify learning effectiveness
+3. **Structural review** - check file organization
+4. **Navigation review** - test all links and references
+5. **Cultural review** - ensure appropriate adaptation
+
+## 🎯 Language-Specific Considerations
+
+### **Korean Version (kor/):**
+- **Maintain original cultural context** and learning approach
+- **Preserve study group dynamics** and personal experiences
+- **Keep Korean educational terminology** where appropriate
+- **Maintain references** to Korean academic sources
+- **Preserve motivational elements** specific to Korean learners
+
+### **English Version (en/):**
+- **Adapt to international audience** while maintaining accuracy
+- **Use standard English CS terminology** from reputable sources
+- **Provide context** for concepts that might be unfamiliar
+- **Maintain accessibility** for non-native English speakers
+- **Include international examples** where appropriate
+
+## 🚀 Performance Optimization
+
+### **Efficiency Strategies:**
+- **Parallel development** of both language versions
+- **Shared terminology database** for consistency
+- **Automated structure validation** between versions
+- **Batch translation** of related content
+- **Continuous synchronization** to prevent divergence
+
+### **Quality Metrics:**
+- **Content parity**: 100% coverage in both languages
+- **Technical accuracy**: Consistent across both versions
+- **Educational effectiveness**: Maintained in both languages
+- **Navigation usability**: Seamless switching between languages
+- **Cultural appropriateness**: Adapted for each audience
+
+### **Maintenance Schedule:**
+- **Weekly**: Check for content synchronization
+- **Monthly**: Review and update terminology
+- **Quarterly**: Comprehensive quality review
+- **Annually**: Update references and sources
+- **As needed**: Address community feedback

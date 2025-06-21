@@ -1,0 +1,154 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Operating Systems Content Guidelines
+
+## 🎯 Specialized Rules for OS Content
+
+### **Technical Accuracy Requirements:**
+- **ALWAYS verify concepts** against [이화여대 운영체제 강의](mdc:http:/www.kocw.net/home/cview.do?cid=4b9cd4c7178db077)
+- **Use precise terminology** - avoid ambiguous terms
+- **Include mathematical notation** when explaining algorithms (e.g., CPU scheduling formulas)
+- **Reference specific algorithms** with their full names and variations
+
+### **Educational Content Structure:**
+
+#### **For Algorithm Explanations:**
+1. **Algorithm Overview** - What it does and when to use it
+2. **Step-by-Step Process** - Detailed execution flow
+3. **Visual Representation** - Use diagrams from [Images/](mdc:Images)
+4. **Example Calculation** - Concrete numerical examples
+5. **Performance Analysis** - Time complexity, advantages, disadvantages
+6. **Real-World Applications** - Where and why it's used
+
+#### **For System Concepts:**
+1. **Definition and Purpose** - Clear, concise explanation
+2. **System Architecture** - How it fits into the overall system
+3. **Interaction with Other Components** - Dependencies and relationships
+4. **Implementation Details** - How it works internally
+5. **Common Issues and Solutions** - Troubleshooting and optimization
+
+### **🚨 CRITICAL OS-SPECIFIC RULES:**
+
+#### **✅ MUST INCLUDE:**
+- **Process state diagrams** for process management topics
+- **Queue visualizations** for scheduling algorithms
+- **Memory layout diagrams** for memory management
+- **Timing diagrams** for synchronization concepts
+- **Hardware interaction flows** for I/O and interrupt handling
+
+#### **❌ AVOID AT ALL COSTS:**
+- **Oversimplified explanations** that lose technical accuracy
+- **Missing edge cases** in algorithm explanations
+- **Incorrect terminology** - use standard OS textbook terms
+- **Outdated information** - stick to current OS principles
+- **Incomplete examples** - always provide complete, runnable scenarios
+
+### **Content Templates:**
+
+#### **CPU Scheduling Algorithm Template:**
+```markdown
+# [Algorithm Name] Scheduling
+
+## Overview
+- **Purpose**: [What problem it solves]
+- **Type**: [Preemptive/Non-preemptive]
+- **Complexity**: [Time complexity]
+
+## Algorithm Steps
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+## Example
+![algorithm_diagram.png](mdc:Images/algorithm_diagram.png)
+
+**Process Table:**
+| Process | Arrival Time | Burst Time | Priority |
+|---------|-------------|------------|----------|
+| P1      | 0           | 6          | 2        |
+
+**Gantt Chart:**
+```
+[P1][P2][P1][P3]
+0   2   4   6   8
+```
+
+## Analysis
+### Advantages
+- [Point 1]
+- [Point 2]
+
+### Disadvantages
+- [Point 1]
+- [Point 2]
+
+### When to Use
+- [Specific scenarios]
+```
+
+#### **System Concept Template:**
+```markdown
+# [Concept Name]
+
+## Definition
+[Clear, technical definition]
+
+## System Architecture
+![concept_diagram.png](mdc:Images/concept_diagram.png)
+
+## How It Works
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+## Interaction with Other Components
+- **Component A**: [How they interact]
+- **Component B**: [How they interact]
+
+## Implementation Example
+```[language]
+[Code or pseudocode example]
+```
+
+## Common Issues and Solutions
+### Issue 1: [Problem description]
+**Solution**: [How to resolve]
+
+### Issue 2: [Problem description]
+**Solution**: [How to resolve]
+```
+
+### **Quality Standards:**
+
+#### **Technical Depth:**
+- **Beginner-friendly** but **technically accurate**
+- **Include both theory and practice**
+- **Provide multiple examples** for complex concepts
+- **Cross-reference related topics** within the project
+
+#### **Visual Quality:**
+- **Use consistent diagram style** across all OS content
+- **Include process flow arrows** in all system diagrams
+- **Show timing relationships** clearly
+- **Use color coding** for different process states or components
+
+#### **Educational Effectiveness:**
+- **Build concepts progressively** - don't assume prior knowledge
+- **Include "Why" explanations** - not just "What" and "How"
+- **Provide memory aids** and mnemonics where helpful
+- **Include self-assessment questions** for key concepts
+
+### **Cross-Reference Guidelines:**
+- **Link related concepts** using markdown links
+- **Reference prerequisite topics** clearly
+- **Build upon previous chapters** systematically
+- **Maintain logical flow** from basic to advanced concepts
+
+### **Update and Maintenance:**
+- **Review content quarterly** for accuracy
+- **Update examples** to reflect current OS versions
+- **Add new algorithms** as they become relevant
+- **Maintain consistency** with [README.md](mdc:README.md) structure

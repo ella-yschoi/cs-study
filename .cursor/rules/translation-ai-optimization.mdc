@@ -1,0 +1,284 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Translation AI Optimization Rules
+
+## 🎯 AI-Assisted Translation Guidelines
+
+### **Context Setting for Translation Tasks:**
+```
+You are assisting with translating Korean CS study materials to English while maintaining:
+- Technical accuracy and educational effectiveness
+- Target audience: Non-CS majors learning CS concepts
+- Source: 이화여대 반효경 교수님's OS lectures
+- Style: Friendly, approachable, practical explanations
+- Goal: Create content that can be explained to others
+```
+
+## 🚨 CRITICAL TRANSLATION AI RULES
+
+### ✅ **OPTIMAL TRANSLATION PROMPTS:**
+
+#### **1. Content Analysis Prompt:**
+```
+Analyze [source_file](mdc:source_file) for translation:
+- Technical complexity level and terminology
+- Cultural references that need adaptation
+- Educational approach and target audience
+- Cross-references to other content
+- Visual elements and examples to preserve
+- Learning objectives to maintain
+```
+
+#### **2. Terminology Mapping Prompt:**
+```
+Create terminology mapping for [topic]:
+- Korean technical terms → Standard English equivalents
+- Educational jargon → Accessible English explanations
+- Algorithm names → Official English names
+- System concepts → Standard OS terminology
+- Cultural references → International equivalents
+- Examples → Contextually appropriate alternatives
+```
+
+#### **3. Translation Execution Prompt:**
+```
+Translate [source_file](mdc:source_file) to English following:
+- Maintain educational tone for non-CS majors
+- Preserve all technical accuracy and mathematical notation
+- Keep all examples and analogies (translate meaning, not just words)
+- Maintain step-by-step explanations with same detail level
+- Preserve practical applications and real-world examples
+- Update internal links to point to English versions
+- Keep all image references and file paths unchanged
+```
+
+#### **4. Quality Review Prompt:**
+```
+Review translated [target_file](mdc:target_file) for:
+- Technical accuracy against English OS sources
+- Educational effectiveness for international audience
+- Consistency with existing English content
+- Proper terminology usage and standardization
+- Maintained learning objectives and progression
+- Cultural appropriateness and accessibility
+- Cross-reference accuracy and navigation
+```
+
+### ❌ **AVOID THESE TRANSLATION PATTERNS:**
+
+#### **1. Machine Translation Issues:**
+- **Don't use direct machine translation** without human review
+- **Don't translate word-by-word** - focus on meaning and context
+- **Don't lose educational tone** in favor of literal translation
+- **Don't ignore cultural context** that affects understanding
+- **Don't skip technical verification** against English sources
+
+#### **2. Content Alteration Problems:**
+- **Don't add or remove technical concepts** during translation
+- **Don't change algorithm explanations** or mathematical formulas
+- **Don't alter code examples** or syntax
+- **Don't modify examples** without maintaining educational value
+- **Don't change learning progression** or difficulty level
+
+#### **3. Structure and Formatting Issues:**
+- **Don't break markdown formatting** during translation
+- **Don't alter heading hierarchy** or file structure
+- **Don't change image references** or file paths
+- **Don't modify table structures** or data
+- **Don't break cross-references** between content
+
+## 🎯 Specialized Translation Prompt Templates
+
+### **Algorithm Translation Template:**
+```
+Translate the algorithm explanation in [source_file](mdc:source_file) following this structure:
+
+## Overview
+- **Purpose**: [Translate the problem it solves]
+- **Type**: [Keep algorithm type - Preemptive/Non-preemptive]
+- **Complexity**: [Keep mathematical notation exactly]
+
+## Algorithm Steps
+1. [Translate step 1 maintaining technical accuracy]
+2. [Translate step 2 maintaining technical accuracy]
+3. [Translate step 3 maintaining technical accuracy]
+
+## Example
+[Keep all image references and table structures]
+[Translate table headers and data appropriately]
+
+## Analysis
+### Advantages
+- [Translate advantage 1]
+- [Translate advantage 2]
+
+### Disadvantages
+- [Translate disadvantage 1]
+- [Translate disadvantage 2]
+
+### When to Use
+- [Translate usage scenarios]
+```
+
+### **Concept Translation Template:**
+```
+Translate the system concept in [source_file](mdc:source_file) following this structure:
+
+## Definition
+[Translate definition maintaining technical accuracy]
+
+## System Architecture
+[Keep all image references unchanged]
+
+## How It Works
+1. [Translate step 1]
+2. [Translate step 2]
+3. [Translate step 3]
+
+## Interaction with Other Components
+- **Component A**: [Translate interaction description]
+- **Component B**: [Translate interaction description]
+
+## Implementation Example
+[Keep code blocks exactly as they are]
+
+## Common Issues and Solutions
+### Issue 1: [Translate problem description]
+**Solution**: [Translate solution]
+
+### Issue 2: [Translate problem description]
+**Solution**: [Translate solution]
+```
+
+### **Educational Content Translation Template:**
+```
+Translate the educational content in [source_file](mdc:source_file) maintaining:
+
+## Learning Objectives
+- [Translate objectives while keeping educational approach]
+
+## Prerequisites
+- [Translate prerequisites maintaining difficulty level]
+
+## Main Concepts
+- [Translate concepts with appropriate technical depth]
+
+## Examples and Applications
+- [Translate examples maintaining educational value]
+- [Adapt cultural references to international context]
+
+## Practice Problems
+- [Translate problems maintaining difficulty and learning goals]
+
+## Summary
+- [Translate summary maintaining key takeaways]
+```
+
+## 🔧 Technical Translation Tools and Techniques
+
+### **Reference Integration:**
+```
+When translating technical content, always reference:
+- Official English OS textbooks and documentation
+- IEEE/ACM standards for technical terminology
+- University course materials from English-speaking institutions
+- Technical documentation from major OS vendors
+- Academic papers for advanced concepts
+```
+
+### **Quality Verification:**
+```
+After translation, verify against:
+- Original Korean content for completeness
+- English technical sources for accuracy
+- Educational effectiveness for target audience
+- Consistency with existing English content
+- Proper terminology usage and standardization
+```
+
+### **Cultural Adaptation:**
+```
+When adapting cultural references:
+- Preserve learning methodology and approach
+- Adapt examples to international context
+- Maintain educational effectiveness
+- Consider accessibility for diverse audiences
+- Keep motivational elements appropriate
+```
+
+## 🚀 Performance Optimization Strategies
+
+### **Efficiency Techniques:**
+- **Batch similar content** for consistent terminology
+- **Create translation memory** for repeated phrases
+- **Use parallel processing** for multiple files
+- **Implement automated checks** for formatting consistency
+- **Establish terminology database** for reuse
+
+### **Quality Assurance:**
+- **Technical accuracy verification** against English sources
+- **Educational effectiveness testing** with target audience
+- **Consistency checking** across all translated content
+- **Cross-reference validation** between topics
+- **Cultural appropriateness review** for international audience
+
+### **Error Prevention:**
+- **Pre-translation analysis** of content complexity
+- **Terminology mapping** before translation
+- **Context preservation** throughout translation
+- **Formatting validation** after translation
+- **Cross-reference verification** for navigation
+
+## 🎯 Advanced Prompt Engineering for Translation
+
+### **Chain-of-Thought Translation:**
+```
+For translating [complex_concept], please:
+1. Analyze the technical complexity and terminology
+2. Map Korean terms to standard English equivalents
+3. Preserve the educational approach and examples
+4. Maintain the learning progression and objectives
+5. Adapt cultural references to international context
+6. Verify technical accuracy against English sources
+7. Ensure consistency with existing English content
+```
+
+### **Few-Shot Translation Learning:**
+```
+Based on the translation style and approach of [existing_english_file1](mdc:existing_english_file1) and [existing_english_file2](mdc:existing_english_file2), 
+translate [new_korean_file](mdc:new_korean_file) following the same:
+- Technical terminology and accuracy standards
+- Educational tone and approachability
+- Example translation and adaptation patterns
+- Cultural reference adaptation strategies
+- Cross-reference and navigation patterns
+```
+
+### **Role-Based Translation:**
+```
+Act as a [technical translator/CS educator/international student] and translate [specific_content]:
+- Assume the target audience has [specific background]
+- Focus on [specific learning objectives]
+- Use [specific translation approach]
+- Maintain [specific quality standards]
+- Adapt [specific cultural elements]
+```
+
+## 🔄 Continuous Improvement
+
+### **Feedback Integration:**
+- **Collect feedback** from English-speaking learners
+- **Update terminology** based on usage patterns
+- **Refine translation style** based on effectiveness
+- **Expand reference materials** for better accuracy
+- **Maintain bilingual community** for ongoing support
+
+### **Adaptation Strategies:**
+- **Adjust translation complexity** based on audience feedback
+- **Modify cultural adaptations** based on effectiveness
+- **Refine technical terminology** based on usage
+- **Update examples** to reflect current technology
+- **Enhance navigation** based on user experience

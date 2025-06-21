@@ -1,0 +1,399 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Translation Guidelines for CS Study Project
+
+## 🎯 Translation Project Overview
+
+### **Project Scope:**
+- **Source**: Korean CS study materials in [os/](mdc:os) and [deep-dive/](mdc:deep-dive)
+- **Target**: English versions maintaining educational quality and technical accuracy
+- **Structure**: Bilingual repository with Korean and English versions
+- **Reference**: [README.md](mdc:README.md) format for bilingual organization
+- **Total Files**: 12 markdown files requiring translation
+
+### **Complete File Inventory:**
+```
+cs-study/
+├── README.md                                    # 1 file - Main navigation
+├── os/                                          # 5 files - Core lectures
+│   ├── 01_What_is_OS.md
+│   ├── 02_Computer_System_Structure.md
+│   ├── 03_Process_Management.md
+│   ├── 04_CPU_Scheduling.md
+│   └── 05_Process_Synchronization.md
+├── deep-dive/                                   # 6 files - Advanced topics
+│   ├── Blocking_NonBlocking.md
+│   ├── Caching.md
+│   ├── Interrupt.md
+│   ├── OS_Kernel.md
+│   ├── Round_Robin.md
+│   └── Unix_Linux_macOS_Windows.md
+└── Images/                                      # 45 image files (shared)
+    └── (various .png files)
+```
+
+## 🚨 CRITICAL TRANSLATION RULES
+
+### ✅ **MUST FOLLOW:**
+
+#### **1. Technical Accuracy Priority:**
+- **Preserve all technical terms** with standard English equivalents
+- **Maintain mathematical notation** and formulas exactly
+- **Keep algorithm names** in their original English forms
+- **Preserve code examples** and syntax without modification
+- **Maintain all image references** and file paths
+
+#### **2. Educational Content Preservation:**
+- **Keep all examples and analogies** - translate meaning, not just words
+- **Preserve step-by-step explanations** with same level of detail
+- **Maintain learning progression** from basic to advanced concepts
+- **Keep all cross-references** between topics
+- **Preserve practical applications** and real-world examples
+
+#### **3. Structure and Formatting:**
+- **Maintain exact heading hierarchy** (# ## ###)
+- **Preserve all markdown formatting** (bold, italic, code blocks)
+- **Keep all image placements** and references
+- **Maintain table structures** and data
+- **Preserve list formatting** and numbering
+
+#### **4. Source Attribution:**
+- **Translate source references** but keep original URLs
+- **Maintain academic citations** in English format
+- **Preserve lecture references** with translated titles
+- **Keep all external links** functional
+
+#### **5. COMPLETENESS REQUIREMENTS:**
+- **Translate ALL 12 markdown files** without exception
+- **Verify file count** matches expected total before and after translation
+- **Use automated file discovery** to prevent missing files
+- **Track translation progress** for each file systematically
+- **Validate complete coverage** before project completion
+
+### ❌ **NEVER DO:**
+
+#### **1. Content Alteration:**
+- **Don't add or remove technical concepts**
+- **Don't change algorithm explanations**
+- **Don't modify mathematical formulas**
+- **Don't alter code examples**
+- **Don't remove or add examples**
+
+#### **2. Style Violations:**
+- **Don't use machine translation** without human review
+- **Don't lose educational tone** and approachability
+- **Don't change technical terminology** to non-standard terms
+- **Don't alter the target audience** (non-CS majors learning CS)
+- **Don't remove Korean cultural context** where relevant
+
+#### **3. Structure Issues:**
+- **Don't change file naming conventions**
+- **Don't alter directory structure**
+- **Don't modify image references**
+- **Don't change cross-references**
+- **Don't break markdown formatting**
+
+#### **4. COMPLETENESS VIOLATIONS:**
+- **Don't skip any .md file** regardless of size or complexity
+- **Don't assume files are already translated** without verification
+- **Don't ignore files in subdirectories** or hidden locations
+- **Don't forget to update inventory** when new files are added
+- **Don't complete project** without verifying all 12 files translated
+
+## 📝 Translation Process Guidelines
+
+### **Pre-Translation Checklist:**
+- [ ] **Run complete file discovery**: `find . -name "*.md" -type f | wc -l` (should be 12)
+- [ ] **Create master translation checklist** with all 12 files
+- [ ] **Identify target audience** (same as Korean version)
+- [ ] **Review technical terminology** for standard English equivalents
+- [ ] **Check for cultural references** that need adaptation
+- [ ] **Verify all image references** are preserved
+- [ ] **Confirm source materials** are accessible in English
+- [ ] **Create target directory structure** (en/os, en/deep-dive)
+
+### **Translation Workflow:**
+
+#### **Step 1: Content Analysis**
+```
+Analyze [source_file](mdc:source_file) for translation:
+- Technical complexity level and terminology
+- Cultural references that need adaptation
+- Educational approach and target audience
+- Cross-references to other content
+- Visual elements and examples to preserve
+- Learning objectives to maintain
+```
+
+#### **Step 2: Terminology Mapping**
+```
+Create terminology mapping for [topic]:
+- Korean technical terms → Standard English equivalents
+- Educational jargon → Accessible English explanations
+- Algorithm names → Official English names
+- System concepts → Standard OS terminology
+- Cultural references → International equivalents
+- Examples → Contextually appropriate alternatives
+```
+
+#### **Step 3: Content Translation**
+```
+Translate [source_file](mdc:source_file) to English following:
+- Maintain educational tone for non-CS majors
+- Preserve all technical accuracy and mathematical notation
+- Keep all examples and analogies (translate meaning, not just words)
+- Maintain step-by-step explanations with same detail level
+- Preserve practical applications and real-world examples
+- Update internal links to point to English versions
+- Keep all image references and file paths unchanged
+```
+
+#### **Step 4: Quality Review**
+```
+Review translated [target_file](mdc:target_file) for:
+- Technical accuracy against English OS sources
+- Educational effectiveness for international audience
+- Consistency with existing English content
+- Proper terminology usage and standardization
+- Maintained learning objectives and progression
+- Cultural appropriateness and accessibility
+- Cross-reference accuracy and navigation
+```
+
+#### **Step 5: Progress Tracking**
+```
+After each file translation:
+- Mark file as completed in master checklist
+- Update progress counter (X/12 files completed)
+- Verify cross-references work in both languages
+- Test navigation between language versions
+- Run automated completeness checks
+```
+
+## 🎨 Translation Style Guidelines
+
+### **Educational Tone:**
+- **Friendly and approachable** - avoid overly formal academic language
+- **Clear and concise** - explain complex concepts simply
+- **Encouraging** - maintain motivational elements from Korean version
+- **Practical** - emphasize real-world applications
+- **Progressive** - build concepts step-by-step
+
+### **Technical Writing Standards:**
+- **Use standard CS terminology** from reputable sources
+- **Maintain consistency** across all translated content
+- **Provide context** for technical terms when first introduced
+- **Use active voice** for clearer explanations
+- **Include examples** for abstract concepts
+
+### **Cultural Adaptation:**
+- **Preserve learning methodology** (Tuesday/Thursday study sessions)
+- **Adapt cultural references** to international audience
+- **Maintain study group dynamics** in explanations
+- **Keep personal learning experiences** where relevant
+- **Adapt examples** to international context when necessary
+
+## 📁 File Organization for Bilingual Content
+
+### **Proposed Structure:**
+```
+cs-study/
+├── README.md                    # Bilingual overview (Korean + English)
+├── kor/                         # Korean content
+│   ├── os/
+│   └── deep-dive/
+├── en/                          # English content
+│   ├── os/
+│   └── deep-dive/
+├── Images/                      # Shared visual assets
+└── .cursor/rules/              # Translation guidelines
+```
+
+### **File Naming Convention:**
+- **Korean files**: Original names (01_What_is_OS.md)
+- **English files**: Same names in en/ directory
+- **Cross-references**: Update to point to appropriate language version
+- **Images**: Shared across both languages
+
+## 🔧 Technical Translation Tools and Resources
+
+### **Reference Materials:**
+- **Official OS textbooks** in English
+- **IEEE/ACM standards** for technical terminology
+- **University course materials** from English-speaking institutions
+- **Technical documentation** from major OS vendors
+- **Academic papers** for advanced concepts
+
+### **Quality Assurance:**
+- **Peer review** by English-speaking CS students
+- **Technical accuracy verification** against English sources
+- **Educational effectiveness testing** with target audience
+- **Consistency checking** across all translated content
+- **Cross-reference validation** between topics
+
+### **Automated Verification:**
+- **File count verification**: Ensure 12 files in each language
+- **Korean text detection**: No Korean characters in English files
+- **Cross-reference validation**: All internal links functional
+- **Image reference verification**: All image paths valid
+- **Progress tracking**: Automated completion monitoring
+
+## 🎯 Specialized Translation Templates
+
+### **Algorithm Translation Template:**
+```markdown
+# [Algorithm Name] - English Title
+
+> Reference: [Translated Source Name](mdc:Original URL)
+
+## Overview
+- **Purpose**: [Translate the problem it solves]
+- **Type**: [Keep algorithm type - Preemptive/Non-preemptive]
+- **Complexity**: [Keep mathematical notation exactly]
+
+## Algorithm Steps
+1. [Translate step 1 maintaining technical accuracy]
+2. [Translate step 2 maintaining technical accuracy]
+3. [Translate step 3 maintaining technical accuracy]
+
+## Example
+![algorithm_diagram.png](mdc:Images/algorithm_diagram.png)
+
+**Process Table:**
+| Process | Arrival Time | Burst Time | Priority |
+|---------|-------------|------------|----------|
+| P1      | 0           | 6          | 2        |
+
+## Analysis
+### Advantages
+- [Translated advantage 1]
+- [Translated advantage 2]
+
+### Disadvantages
+- [Translated disadvantage 1]
+- [Translated disadvantage 2]
+
+### When to Use
+- [Translated usage scenarios]
+```
+
+### **Concept Translation Template:**
+```markdown
+# [Concept Name] - English Title
+
+## Definition
+[Translated definition maintaining technical accuracy]
+
+## System Architecture
+![concept_diagram.png](mdc:Images/concept_diagram.png)
+
+## How It Works
+1. [Translated step 1]
+2. [Translated step 2]
+3. [Translated step 3]
+
+## Interaction with Other Components
+- **Component A**: [Translated interaction description]
+- **Component B**: [Translated interaction description]
+
+## Implementation Example
+```[language]
+[Preserve original code exactly]
+```
+
+## Common Issues and Solutions
+### Issue 1: [Translated problem description]
+**Solution**: [Translated solution]
+
+### Issue 2: [Translated problem description]
+**Solution**: [Translated solution]
+```
+
+### **Educational Content Translation Template:**
+```markdown
+# [Concept Name] - English Title
+
+## Learning Objectives
+- [Translate objectives while keeping educational approach]
+
+## Prerequisites
+- [Translate prerequisites maintaining difficulty level]
+
+## Main Concepts
+- [Translate concepts with appropriate technical depth]
+
+## Examples and Applications
+- [Translate examples maintaining educational value]
+- [Adapt cultural references to international context]
+
+## Practice Problems
+- [Translate problems maintaining difficulty and learning goals]
+
+## Summary
+- [Translate summary maintaining key takeaways]
+```
+
+## 🚀 Performance Optimization for Translation
+
+### **Efficiency Strategies:**
+- **Batch similar content** for consistent terminology
+- **Create translation memory** for repeated phrases
+- **Use parallel processing** for multiple files
+- **Implement automated checks** for formatting consistency
+- **Establish terminology database** for reuse
+
+### **Quality Metrics:**
+- **Technical accuracy**: 100% preservation of concepts
+- **Educational effectiveness**: Maintained learning objectives
+- **Readability**: Clear, accessible English
+- **Consistency**: Uniform terminology across all content
+- **Completeness**: No missing information from original
+- **File coverage**: 100% of 12 files translated
+
+### **Continuous Improvement:**
+- **Collect feedback** from English-speaking learners
+- **Update terminology** based on usage patterns
+- **Refine translation style** based on effectiveness
+- **Expand reference materials** for better accuracy
+- **Maintain bilingual community** for ongoing support
+
+## 🔄 Automated Completeness Verification
+
+### **Pre-Translation Verification:**
+```bash
+# Verify total file count
+find . -name "*.md" -type f | wc -l  # Should be 12
+
+# Create translation inventory
+find . -name "*.md" -type f | sort > translation_inventory.txt
+```
+
+### **Post-Translation Verification:**
+```bash
+# Verify all files translated
+find ./en -name "*.md" -type f | wc -l  # Should be 12
+find ./kor -name "*.md" -type f | wc -l  # Should be 12
+
+# Check for Korean text in English files
+find ./en -name "*.md" -exec grep -l "[가-힣]" {} \;
+
+# Verify cross-references
+find ./en -name "*.md" -exec grep -o "\[.*\]\([^)]*\)" {} \;
+```
+
+### **Final Completeness Checklist:**
+- [ ] All 12 markdown files translated to English
+- [ ] No Korean text remains in English versions
+- [ ] All cross-references updated to English paths
+- [ ] Bilingual navigation implemented in README.md
+- [ ] All image references remain functional
+- [ ] Technical terminology consistent across all files
+- [ ] Educational approach maintained in translations
+- [ ] Cultural adaptations appropriate for international audience
+- [ ] File structure identical between kor/ and en/ directories
+- [ ] No orphaned or missing content exists
+- [ ] Automated verification scripts pass all checks
+- [ ] Progress tracking shows 12/12 files completed

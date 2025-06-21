@@ -1,0 +1,165 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# AI Collaboration Optimization Rules
+
+## 🎯 Advanced Prompt Engineering for CS Study Project
+
+### **Context Setting for AI Assistance:**
+
+#### **Project Context Template:**
+```
+You are assisting with a Computer Science study project focused on Operating Systems. 
+The project follows these key principles:
+- Target audience: Non-CS majors learning CS concepts
+- Learning method: Tuesday/Thursday 10 PM study sessions with TIL documentation
+- Primary source: 이화여대 반효경 교수님's OS lectures
+- Content style: Korean language, practical examples, visual explanations
+- Goal: Create content that can be explained to others
+```
+
+### **🚨 CRITICAL AI INTERACTION RULES:**
+
+#### **✅ OPTIMAL PROMPT STRUCTURE:**
+1. **Always specify the target file** using [filename](mdc:filename) format
+2. **Include context about the learning stage** (beginner, intermediate, advanced)
+3. **Reference specific concepts** from existing content
+4. **Request specific output format** (markdown, code, diagram description)
+5. **Specify the educational goal** (explanation, example, practice problem)
+
+#### **❌ AVOID THESE PROMPT PATTERNS:**
+- **Vague requests** without specific context
+- **Generic questions** that don't reference project structure
+- **Requests for content** without specifying target audience level
+- **Asking for solutions** without showing attempted work
+- **Requesting explanations** without mentioning prerequisite knowledge
+
+### **Specialized Prompt Templates:**
+
+#### **For Content Creation:**
+```
+Create content for [specific topic] in [OS/](mdc:OS/) or [Deep_Dive/](mdc:Deep_Dive/) following these requirements:
+- Target audience: [beginner/intermediate/advanced]
+- Prerequisite knowledge: [list required concepts]
+- Learning objective: [what should be understood after reading]
+- Include: [visual elements, examples, practice problems]
+- Reference: [specific source or existing content]
+```
+
+#### **For Content Review:**
+```
+Review [filename](mdc:filename) for:
+- Technical accuracy against [이화여대 강의](http://www.kocw.net/home/cview.do?cid=4b9cd4c7178db077)
+- Educational effectiveness for non-CS majors
+- Consistency with project style and format
+- Completeness of examples and explanations
+- Proper cross-referencing with other content
+```
+
+#### **For Problem Solving:**
+```
+Help solve [specific problem] related to [concept]:
+- Current understanding level: [describe what's already known]
+- Specific difficulty: [what's confusing or unclear]
+- Attempted approach: [what has been tried]
+- Desired outcome: [what should be learned]
+- Reference material: [relevant existing content]
+```
+
+### **AI Response Optimization:**
+
+#### **Expected AI Behavior:**
+- **Always respond in Korean** unless specifically requested otherwise
+- **Reference existing project files** using proper mdc format
+- **Provide step-by-step explanations** for complex concepts
+- **Include practical examples** and real-world applications
+- **Suggest visual elements** when appropriate
+- **Cross-reference related topics** within the project
+
+#### **Quality Assurance for AI Responses:**
+- **Check technical accuracy** against official sources
+- **Ensure educational clarity** for target audience
+- **Maintain consistency** with existing content style
+- **Provide actionable next steps** for learning
+- **Include self-assessment opportunities**
+
+### **Advanced Prompt Engineering Techniques:**
+
+#### **Chain-of-Thought Prompting:**
+```
+For [complex concept], please:
+1. Break down the concept into fundamental components
+2. Explain each component step-by-step
+3. Show how components interact
+4. Provide concrete examples
+5. Create a summary that can be explained to others
+```
+
+#### **Few-Shot Learning Prompts:**
+```
+Based on the style and structure of [existing_file1](mdc:existing_file1) and [existing_file2](mdc:existing_file2), 
+create content for [new_topic] that follows the same:
+- Writing style and tone
+- Structure and organization
+- Level of detail and examples
+- Visual element integration
+```
+
+#### **Role-Based Prompting:**
+```
+Act as a [CS professor/study group leader/peer tutor] and help with [specific topic]:
+- Assume the student has [specific background knowledge]
+- Focus on [specific learning objective]
+- Use [specific teaching method]
+- Provide [specific type of feedback]
+```
+
+### **Performance Optimization Strategies:**
+
+#### **For Complex Topics:**
+- **Break down requests** into smaller, manageable parts
+- **Request intermediate outputs** for validation
+- **Ask for multiple approaches** to the same concept
+- **Request both theoretical and practical explanations**
+
+#### **For Content Enhancement:**
+- **Ask for additional examples** when explanations are unclear
+- **Request visual element suggestions** for abstract concepts
+- **Ask for cross-references** to related topics
+- **Request practice problems** for self-assessment
+
+#### **For Learning Optimization:**
+- **Ask for memory aids** and mnemonics
+- **Request analogies** for complex concepts
+- **Ask for common misconceptions** and how to avoid them
+- **Request study strategies** for the specific topic
+
+### **Error Prevention and Recovery:**
+
+#### **Common AI Misunderstandings:**
+- **Language confusion**: Always specify Korean language requirement
+- **Context loss**: Always reference specific files and concepts
+- **Style inconsistency**: Always reference existing content style
+- **Technical inaccuracy**: Always request verification against sources
+
+#### **Recovery Strategies:**
+- **Rephrase requests** with more specific context
+- **Provide examples** of desired output format
+- **Break complex requests** into simpler parts
+- **Ask for clarification** when responses are unclear
+
+### **Continuous Improvement:**
+
+#### **Feedback Loop:**
+- **Rate AI responses** for helpfulness and accuracy
+- **Provide specific feedback** on what worked and what didn't
+- **Suggest improvements** for future interactions
+- **Share successful prompt patterns** for reuse
+
+#### **Adaptation Strategies:**
+- **Adjust prompt complexity** based on response quality
+- **Modify context provided** based on AI understanding
+- **Refine output requirements** based on actual needs
+- **Update reference materials** as project evolves

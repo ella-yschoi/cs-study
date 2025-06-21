@@ -1,0 +1,259 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Comprehensive Translation Checklist
+
+## 🎯 Complete File Inventory for Translation
+
+### **Current Project Structure (Total: 12 Markdown Files)**
+```
+cs-study/
+├── README.md                                    # 1 file
+├── os/                                          # 5 files
+│   ├── 01_What_is_OS.md
+│   ├── 02_Computer_System_Structure.md
+│   ├── 03_Process_Management.md
+│   ├── 04_CPU_Scheduling.md
+│   └── 05_Process_Synchronization.md
+├── deep-dive/                                   # 6 files
+│   ├── Blocking_NonBlocking.md
+│   ├── Caching.md
+│   ├── Interrupt.md
+│   ├── OS_Kernel.md
+│   ├── Round_Robin.md
+│   └── Unix_Linux_macOS_Windows.md
+└── Images/                                      # 45 image files (shared)
+    └── (various .png files)
+```
+
+## 🚨 CRITICAL COMPREHENSIVE TRANSLATION RULES
+
+### ✅ **MANDATORY COMPLETENESS REQUIREMENTS:**
+
+#### **1. File Discovery and Inventory:**
+- **ALWAYS run complete file discovery** before starting translation
+- **Create master translation checklist** with all 12 markdown files
+- **Verify file count** matches expected total (12 files)
+- **Check for hidden files** or files in subdirectories
+- **Validate file extensions** (.md files only for translation)
+
+#### **2. Systematic Translation Process:**
+- **Translate files in logical order** (README → os → deep-dive)
+- **Mark each file as completed** in translation checklist
+- **Verify translation completion** before moving to next file
+- **Cross-reference all internal links** after each translation
+- **Update navigation structure** after each directory completion
+
+#### **3. Quality Assurance for Completeness:**
+- **Verify all 12 files are translated** before project completion
+- **Check all cross-references** work in both languages
+- **Validate bilingual navigation** in README.md
+- **Ensure no orphaned content** exists
+- **Confirm all image references** remain functional
+
+### ❌ **NEVER ALLOW THESE COMPLETENESS VIOLATIONS:**
+
+#### **1. File Skipping:**
+- **Don't skip any .md file** regardless of size or complexity
+- **Don't assume files are already translated** without verification
+- **Don't ignore files in subdirectories** or hidden locations
+- **Don't skip README.md** - it's the main navigation file
+- **Don't forget deep-dive files** - they contain important concepts
+
+#### **2. Incomplete Translation:**
+- **Don't leave partial translations** - complete each file entirely
+- **Don't skip sections** within files due to complexity
+- **Don't ignore cross-references** between files
+- **Don't forget to update file paths** in translated content
+- **Don't leave Korean text** in English versions
+
+#### **3. Structure Violations:**
+- **Don't create missing directories** in target structure
+- **Don't break existing file organization** during translation
+- **Don't lose file naming conventions** in translated versions
+- **Don't create orphaned files** without proper navigation
+- **Don't ignore image dependencies** during translation
+
+## 📋 Master Translation Checklist
+
+### **Phase 1: Project Overview (1 file)**
+- [ ] **README.md** - Main project documentation and navigation
+  - [ ] Translate project description and goals
+  - [ ] Translate study methodology and schedule
+  - [ ] Translate lecture notes section with links
+  - [ ] Translate further study section with links
+  - [ ] Update all internal links to English versions
+  - [ ] Create bilingual navigation structure
+
+### **Phase 2: Operating System Lectures (5 files)**
+- [ ] **os/01_What_is_OS.md** - Operating System Overview
+  - [ ] Translate concept definitions and explanations
+  - [ ] Preserve all technical diagrams and images
+  - [ ] Maintain educational approach and examples
+  - [ ] Update cross-references to other OS topics
+  - [ ] Verify technical accuracy against English sources
+
+- [ ] **os/02_Computer_System_Structure.md** - Computer System Architecture
+  - [ ] Translate system architecture explanations
+  - [ ] Preserve hardware interaction diagrams
+  - [ ] Maintain component relationship descriptions
+  - [ ] Update technical terminology consistently
+  - [ ] Verify system flow explanations
+
+- [ ] **os/03_Process_Management.md** - Process Management Concepts
+  - [ ] Translate process lifecycle explanations
+  - [ ] Preserve process state diagrams
+  - [ ] Maintain scheduling algorithm descriptions
+  - [ ] Update process control block explanations
+  - [ ] Verify context switching descriptions
+
+- [ ] **os/04_CPU_Scheduling.md** - CPU Scheduling Algorithms
+  - [ ] Translate all scheduling algorithm explanations
+  - [ ] Preserve Gantt charts and timing diagrams
+  - [ ] Maintain algorithm comparison tables
+  - [ ] Update performance analysis sections
+  - [ ] Verify mathematical notation and formulas
+
+- [ ] **os/05_Process_Synchronization.md** - Process Synchronization
+  - [ ] Translate synchronization mechanism explanations
+  - [ ] Preserve deadlock prevention diagrams
+  - [ ] Maintain critical section explanations
+  - [ ] Update semaphore and mutex descriptions
+  - [ ] Verify race condition examples
+
+### **Phase 3: Deep Dive Topics (6 files)**
+- [ ] **deep-dive/Blocking_NonBlocking.md** - Blocking vs Non-blocking
+  - [ ] Translate concept definitions and differences
+  - [ ] Preserve practical examples and use cases
+  - [ ] Maintain performance comparison explanations
+  - [ ] Update programming context examples
+  - [ ] Verify technical accuracy
+
+- [ ] **deep-dive/Caching.md** - Caching Mechanisms
+  - [ ] Translate caching strategy explanations
+  - [ ] Preserve cache hierarchy diagrams
+  - [ ] Maintain performance optimization descriptions
+  - [ ] Update real-world application examples
+  - [ ] Verify cache algorithm explanations
+
+- [ ] **deep-dive/Interrupt.md** - Interrupt Handling
+  - [ ] Translate interrupt mechanism explanations
+  - [ ] Preserve interrupt flow diagrams
+  - [ ] Maintain hardware interaction descriptions
+  - [ ] Update interrupt priority explanations
+  - [ ] Verify system call descriptions
+
+- [ ] **deep-dive/OS_Kernel.md** - Operating System Kernel
+  - [ ] Translate kernel architecture explanations
+  - [ ] Preserve kernel space diagrams
+  - [ ] Maintain system call interface descriptions
+  - [ ] Update memory management explanations
+  - [ ] Verify security mechanism descriptions
+
+- [ ] **deep-dive/Round_Robin.md** - Round Robin Scheduling
+  - [ ] Translate algorithm implementation details
+  - [ ] Preserve scheduling diagrams and examples
+  - [ ] Maintain performance analysis
+  - [ ] Update time quantum explanations
+  - [ ] Verify fairness and efficiency descriptions
+
+- [ ] **deep-dive/Unix_Linux_macOS_Windows.md** - OS Comparison
+  - [ ] Translate operating system comparisons
+  - [ ] Preserve feature comparison tables
+  - [ ] Maintain architecture differences
+  - [ ] Update usage scenario descriptions
+  - [ ] Verify technical specification accuracy
+
+## 🔄 Translation Workflow with Completeness Verification
+
+### **Pre-Translation Setup:**
+```
+1. Run complete file discovery: find . -name "*.md" -type f
+2. Create master checklist with all 12 files
+3. Verify file count matches expected total
+4. Create target directory structure (en/)
+5. Set up bilingual navigation framework
+```
+
+### **Translation Execution:**
+```
+For each file in the checklist:
+1. Analyze source file for translation requirements
+2. Create terminology mapping for technical terms
+3. Execute translation following established templates
+4. Verify technical accuracy against English sources
+5. Update cross-references and navigation links
+6. Mark file as completed in checklist
+7. Validate no content was lost or altered
+```
+
+### **Post-Translation Verification:**
+```
+1. Verify all 12 files are translated and complete
+2. Test all cross-references between files
+3. Validate bilingual navigation in README.md
+4. Check all image references remain functional
+5. Confirm no Korean text remains in English versions
+6. Verify consistent terminology across all files
+7. Test navigation between language versions
+```
+
+## 🎯 Automated Completeness Checks
+
+### **File Count Verification:**
+```bash
+# Before translation
+find . -name "*.md" -type f | wc -l  # Should be 12
+
+# After translation
+find ./en -name "*.md" -type f | wc -l  # Should be 12
+find ./kor -name "*.md" -type f | wc -l  # Should be 12
+```
+
+### **Content Completeness Checks:**
+```bash
+# Check for Korean text in English files
+find ./en -name "*.md" -exec grep -l "[가-힣]" {} \;
+
+# Check for missing translations
+diff -r ./kor ./en --exclude=".git" --exclude=".cursor"
+```
+
+### **Navigation Integrity Checks:**
+```bash
+# Verify all internal links work
+find ./en -name "*.md" -exec grep -l "\[.*\]\(.*\)" {} \;
+
+# Check for broken image references
+find ./en -name "*.md" -exec grep -l "!\[.*\]\(.*\)" {} \;
+```
+
+## 🚀 Quality Assurance for Complete Translation
+
+### **Completeness Metrics:**
+- **File Coverage**: 100% of 12 markdown files translated
+- **Content Completeness**: No sections or paragraphs skipped
+- **Cross-Reference Accuracy**: All internal links functional
+- **Navigation Integrity**: Bilingual navigation working
+- **Technical Accuracy**: All concepts preserved and accurate
+
+### **Final Verification Checklist:**
+- [ ] All 12 markdown files translated to English
+- [ ] No Korean text remains in English versions
+- [ ] All cross-references updated to English paths
+- [ ] Bilingual navigation implemented in README.md
+- [ ] All image references remain functional
+- [ ] Technical terminology consistent across all files
+- [ ] Educational approach maintained in translations
+- [ ] Cultural adaptations appropriate for international audience
+- [ ] File structure identical between kor/ and en/ directories
+- [ ] No orphaned or missing content exists
+
+### **Continuous Monitoring:**
+- **Weekly**: Check for any untranslated content
+- **Monthly**: Verify cross-reference integrity
+- **Quarterly**: Review bilingual navigation effectiveness
+- **Annually**: Update terminology and references
+- **As needed**: Address community feedback and issues

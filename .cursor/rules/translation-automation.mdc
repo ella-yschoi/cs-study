@@ -1,0 +1,300 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Translation Automation and Verification Rules
+
+## 🎯 Automated Translation Management
+
+### **File Discovery and Inventory Automation:**
+```bash
+# Complete file discovery script
+find . -name "*.md" -type f | sort > translation_inventory.txt
+echo "Total markdown files found: $(find . -name "*.md" -type f | wc -l)"
+echo "Expected total: 12 files"
+```
+
+### **Translation Progress Tracking:**
+```bash
+# Translation progress checker
+echo "=== TRANSLATION PROGRESS REPORT ==="
+echo "Korean files: $(find ./kor -name "*.md" -type f 2>/dev/null | wc -l)/12"
+echo "English files: $(find ./en -name "*.md" -type f 2>/dev/null | wc -l)/12"
+echo "Missing translations: $((12 - $(find ./en -name "*.md" -type f 2>/dev/null | wc -l)))"
+```
+
+## 🚨 CRITICAL AUTOMATION RULES
+
+### ✅ **MANDATORY AUTOMATED CHECKS:**
+
+#### **1. Pre-Translation Validation:**
+- **ALWAYS run file discovery** before starting translation
+- **Verify file count** matches expected total (12 files)
+- **Check for hidden or nested files** that might be missed
+- **Validate file structure** before creating target directories
+- **Confirm all files are accessible** and readable
+
+#### **2. Translation Progress Monitoring:**
+- **Track translation completion** for each file
+- **Monitor cross-reference updates** after each translation
+- **Verify file structure consistency** between kor/ and en/
+- **Check for orphaned content** during translation process
+- **Validate image references** remain functional
+
+#### **3. Post-Translation Verification:**
+- **Confirm all 12 files translated** completely
+- **Verify no Korean text remains** in English versions
+- **Test all internal navigation** and cross-references
+- **Validate bilingual structure** integrity
+- **Check for missing content** or broken links
+
+### ❌ **AUTOMATION FAILURE PREVENTION:**
+
+#### **1. File Discovery Failures:**
+- **Don't rely on manual file counting** - use automated discovery
+- **Don't skip subdirectory scanning** - check all nested locations
+- **Don't ignore hidden files** - include all .md files
+- **Don't assume file structure** - verify actual structure
+- **Don't forget to update inventory** when new files are added
+
+#### **2. Translation Tracking Failures:**
+- **Don't lose track of progress** - maintain automated checklist
+- **Don't skip verification steps** - run all automated checks
+- **Don't ignore error messages** - address all automation warnings
+- **Don't forget to update cross-references** - maintain link integrity
+- **Don't skip quality validation** - verify translation quality
+
+#### **3. Structure Validation Failures:**
+- **Don't break file organization** - maintain identical structure
+- **Don't lose file naming conventions** - preserve naming patterns
+- **Don't create inconsistent directories** - mirror structure exactly
+- **Don't ignore image dependencies** - maintain all visual references
+- **Don't forget navigation updates** - update all internal links
+
+## 🔧 Automated Verification Scripts
+
+### **Complete Translation Verification Script:**
+```bash
+#!/bin/bash
+# complete_translation_verification.sh
+
+echo "=== COMPLETE TRANSLATION VERIFICATION ==="
+
+# File count verification
+echo "1. File Count Verification:"
+KOR_COUNT=$(find ./kor -name "*.md" -type f 2>/dev/null | wc -l)
+EN_COUNT=$(find ./en -name "*.md" -type f 2>/dev/null | wc -l)
+EXPECTED_COUNT=12
+
+echo "   Korean files: $KOR_COUNT/$EXPECTED_COUNT"
+echo "   English files: $EN_COUNT/$EXPECTED_COUNT"
+
+if [ $KOR_COUNT -eq $EXPECTED_COUNT ] && [ $EN_COUNT -eq $EXPECTED_COUNT ]; then
+    echo "   ✅ File count verification PASSED"
+else
+    echo "   ❌ File count verification FAILED"
+    echo "   Missing files: $((EXPECTED_COUNT - EN_COUNT))"
+fi
+
+# Korean text detection in English files
+echo ""
+echo "2. Korean Text Detection:"
+KOREAN_TEXT_FOUND=$(find ./en -name "*.md" -type f 2>/dev/null -exec grep -l "[가-힣]" {} \; | wc -l)
+
+if [ $KOREAN_TEXT_FOUND -eq 0 ]; then
+    echo "   ✅ No Korean text found in English files"
+else
+    echo "   ❌ Korean text found in $KOREAN_TEXT_FOUND English files:"
+    find ./en -name "*.md" -type f 2>/dev/null -exec grep -l "[가-힣]" {} \;
+fi
+
+# Cross-reference verification
+echo ""
+echo "3. Cross-Reference Verification:"
+BROKEN_LINKS=$(find ./en -name "*.md" -type f 2>/dev/null -exec grep -o "\[.*\]\([^)]*\)" {} \; | grep -v "http" | grep -v "mailto" | wc -l)
+
+if [ $BROKEN_LINKS -eq 0 ]; then
+    echo "   ✅ No broken internal links detected"
+else
+    echo "   ⚠️  $BROKEN_LINKS internal links found (verify manually)"
+fi
+
+# Image reference verification
+echo ""
+echo "4. Image Reference Verification:"
+MISSING_IMAGES=$(find ./en -name "*.md" -type f 2>/dev/null -exec grep -o "!\[.*\]\([^)]*\)" {} \; | grep -v "http" | wc -l)
+
+if [ $MISSING_IMAGES -eq 0 ]; then
+    echo "   ✅ No image references found (verify manually)"
+else
+    echo "   ⚠️  $MISSING_IMAGES image references found (verify manually)"
+fi
+
+echo ""
+echo "=== VERIFICATION COMPLETE ==="
+```
+
+### **Translation Progress Tracker:**
+```bash
+#!/bin/bash
+# translation_progress_tracker.sh
+
+echo "=== TRANSLATION PROGRESS TRACKER ==="
+
+# Define all expected files
+declare -a FILES=(
+    "README.md"
+    "os/01_What_is_OS.md"
+    "os/02_Computer_System_Structure.md"
+    "os/03_Process_Management.md"
+    "os/04_CPU_Scheduling.md"
+    "os/05_Process_Synchronization.md"
+    "deep-dive/Blocking_NonBlocking.md"
+    "deep-dive/Caching.md"
+    "deep-dive/Interrupt.md"
+    "deep-dive/OS_Kernel.md"
+    "deep-dive/Round_Robin.md"
+    "deep-dive/Unix_Linux_macOS_Windows.md"
+)
+
+echo "File Translation Status:"
+echo "========================"
+
+COMPLETED=0
+TOTAL=${#FILES[@]}
+
+for file in "${FILES[@]}"; do
+    if [ -f "./en/$file" ]; then
+        echo "✅ $file - TRANSLATED"
+        ((COMPLETED++))
+    else
+        echo "❌ $file - NOT TRANSLATED"
+    fi
+done
+
+echo ""
+echo "Progress: $COMPLETED/$TOTAL files completed ($((COMPLETED * 100 / TOTAL))%)"
+
+if [ $COMPLETED -eq $TOTAL ]; then
+    echo "🎉 ALL FILES TRANSLATED!"
+else
+    echo "📝 $((TOTAL - COMPLETED)) files remaining"
+fi
+```
+
+### **Quality Assurance Automation:**
+```bash
+#!/bin/bash
+# quality_assurance_check.sh
+
+echo "=== QUALITY ASSURANCE CHECK ==="
+
+# Check for technical terminology consistency
+echo "1. Technical Terminology Check:"
+TECH_TERMS=("operating system" "process" "scheduling" "synchronization" "memory" "CPU")
+for term in "${TECH_TERMS[@]}"; do
+    COUNT=$(find ./en -name "*.md" -type f 2>/dev/null -exec grep -i "$term" {} \; | wc -l)
+    echo "   '$term': found $COUNT times"
+done
+
+# Check for educational tone consistency
+echo ""
+echo "2. Educational Tone Check:"
+EDU_PHRASES=("for example" "let's" "understand" "explain" "consider" "imagine")
+for phrase in "${EDU_PHRASES[@]}"; do
+    COUNT=$(find ./en -name "*.md" -type f 2>/dev/null -exec grep -i "$phrase" {} \; | wc -l)
+    echo "   '$phrase': found $COUNT times"
+done
+
+# Check for cross-reference consistency
+echo ""
+echo "3. Cross-Reference Consistency:"
+CROSS_REFS=$(find ./en -name "*.md" -type f 2>/dev/null -exec grep -o "\[.*\]\([^)]*\)" {} \; | grep -v "http" | sort | uniq -c | sort -nr)
+echo "   Cross-reference frequency:"
+echo "$CROSS_REFS" | head -10
+
+echo ""
+echo "=== QUALITY CHECK COMPLETE ==="
+```
+
+## 🎯 Automated Translation Workflow
+
+### **Phase 1: Pre-Translation Setup (Automated)**
+```bash
+# 1. File discovery and inventory
+find . -name "*.md" -type f | sort > translation_inventory.txt
+
+# 2. Create target directory structure
+mkdir -p en/os en/deep-dive
+
+# 3. Verify source structure
+tree -I '.git|.cursor' > source_structure.txt
+
+# 4. Initialize progress tracking
+echo "0/12" > translation_progress.txt
+```
+
+### **Phase 2: Translation Execution (Semi-Automated)**
+```bash
+# For each file in translation_inventory.txt:
+# 1. Copy source file to target location
+# 2. Execute translation using AI assistance
+# 3. Update progress tracker
+# 4. Verify translation quality
+# 5. Update cross-references
+```
+
+### **Phase 3: Post-Translation Verification (Automated)**
+```bash
+# 1. Run complete verification script
+./complete_translation_verification.sh
+
+# 2. Generate progress report
+./translation_progress_tracker.sh
+
+# 3. Perform quality assurance check
+./quality_assurance_check.sh
+
+# 4. Generate final report
+echo "Translation project status: COMPLETE/INCOMPLETE"
+```
+
+## 🚀 Performance Optimization for Automation
+
+### **Efficiency Strategies:**
+- **Batch processing** of similar content types
+- **Parallel verification** of multiple files
+- **Incremental progress tracking** during translation
+- **Automated error detection** and reporting
+- **Continuous monitoring** of translation quality
+
+### **Quality Metrics:**
+- **Completeness**: 100% file coverage (12/12 files)
+- **Accuracy**: No Korean text in English versions
+- **Consistency**: Uniform terminology across all files
+- **Integrity**: All cross-references functional
+- **Accessibility**: Bilingual navigation working
+
+### **Error Prevention:**
+- **Automated file discovery** prevents missing files
+- **Progress tracking** prevents incomplete translations
+- **Quality checks** prevent poor translations
+- **Structure validation** prevents organization issues
+- **Cross-reference verification** prevents broken links
+
+## 🔄 Continuous Monitoring and Maintenance
+
+### **Automated Monitoring Schedule:**
+- **Daily**: Progress tracking and file count verification
+- **Weekly**: Quality assurance and terminology consistency
+- **Monthly**: Cross-reference integrity and navigation testing
+- **Quarterly**: Comprehensive review and update
+- **As needed**: Error detection and resolution
+
+### **Maintenance Automation:**
+- **Automated backup** of translation progress
+- **Version control** of translation files
+- **Change detection** in source files
+- **Quality regression** prevention
+- **Performance optimization** based on usage patterns
