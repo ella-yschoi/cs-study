@@ -1,4 +1,4 @@
-# Ella's CS Study
+# 💾 Ella's CS Study
 
 > 🧠 Learning CS concepts with the depth of a major, even as a non-major!
 
